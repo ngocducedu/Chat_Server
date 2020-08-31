@@ -13,12 +13,17 @@ npm i -D
 ===
 
 -> run in develop inveroment
+
 npm run dev
 
 ==== 
+
 -> build js file and run product
+
 npm run build
+
 npm start
+
 
 =======
 
