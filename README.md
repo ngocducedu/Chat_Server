@@ -1,9 +1,13 @@
 # Chat_Server
 
 git clone https://github.com/ngocducedu/Chat_Server.git
+
 cd Chat_Server
+
 code .
+
 npm install
+
 npm i -D
 
 ===
