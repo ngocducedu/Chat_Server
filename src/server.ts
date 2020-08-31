@@ -2,8 +2,8 @@ const { ApolloServer, gql, AuthenticationError, PubSub, ParamsDictionary } = req
 const jwt = require('jsonwebtoken')
 export const mongoose = require('mongoose')
 const uri = "mongodb+srv://admin:silotech@cluster0.ulm8l.mongodb.net/chat_app?retryWrites=true&w=majority";
-const typeDefs = require('./typeDefs.ts')
-const resolvers = require('./resolvers.ts')
+const typeDefs = require('./typeDefs')
+const resolvers = require('./resolvers')
 
 const pubsub = new PubSub()
 
