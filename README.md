@@ -31,11 +31,8 @@ Example PlayGround:
 mutation {
 
   register(userName: "ngocduc", email:"email@gamil.com", password:"123") {
-  
-    id
-    
-    userName
-    
+    id  
+    userName    
   }
   
 }
@@ -44,18 +41,12 @@ mutation {
 
 mutation {
 
-  login(userName: "ngocduc", password:"123") {
-  
-    token
-    
-    user{
-    
-      id
-      
-      email
-      
-      hashedPassword
-      
+  login(userName: "ngocduc", password:"123") {  
+    token    
+    user{ 
+      id      
+      email      
+      hashedPassword      
     }
     
   }
@@ -68,7 +59,7 @@ mutation {
 
 
 mutation {
-  createMessage(user: {userName: "ngocduc", email:"email@gamil.com"},
+  createMessage(user: {userName: "ngocduc", email:"email"},
     					roomName: "chatroom",
     					message: "Xin chao") {
     userName
@@ -82,14 +73,10 @@ mutation {
 
 subscription {
 
-  newMessage(roomName:"chatroom") {
-  
-    id
-    
-    userName
-    
-    message
-    
+  newMessage(roomName:"chatroom") {  
+    id   
+    userName    
+    message    
   }
   
 }
@@ -106,3 +93,5 @@ Example headers token
   "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVmNGNkODZkNTc2YTkwMjYyMDU5MGFkYyIsInVzZXJOYW1lIjoibmdvY2R1YyIsImVtYWlsIjoiZW1haWwiLCJoYXNoZWRQYXNzd29yZCI6IiQyYiQxMCQudXppSUNrcllBT0hCU3UzQ3hlZFIubUIuMFFwMlhIRTliZmlwbC9MeXpFUVRQS2tETG5SSyIsImNyZWF0ZWQiOiIyMDIwLTA4LTMxVDExOjAxOjAxLjU4NFoiLCJfX3YiOjB9LCJpYXQiOjE1OTg4NzMwODQsImV4cCI6MTU5ODg3Mzk4NH0.kkAIya4JBHnN3A-VIlglSFwDlqbBSuDgSQcCWdKJXIo"
  
 }
+
+
